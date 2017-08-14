@@ -8,7 +8,7 @@ element.innerHTML='New  Value';
 //move the image
 var image=document.getElementById('pulkit');
 img.onclick=function() {
-    img.style.marginright='100px';
+    img.style.marginleft='100px';
 };
 
 
