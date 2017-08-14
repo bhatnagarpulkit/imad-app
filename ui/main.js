@@ -9,10 +9,15 @@ button.onclick=function(){
     if(request.readyState ===XMLHttpRequest.DONE){
     //take some action
     if(request.status==200){
-        var counter=request.responseText;
-         var span=document.getElementById('count');
-         span.innerHTML= counter.toString();
-        
+        //capture the list of names and render it
+   var names=['name1','name2','name3'];
+   names=JSON.parse(names);
+   var list='';
+   for(var i=0; i<names.length; i++){
+       list+ '<li>' + names[i] +'</li>';
+   }
+    var ul=documnet.getElementById('namelist');
+   ul.innerHTML=list;
     }
   }
   //not done yet
@@ -27,12 +32,6 @@ var name=nameInput.value;
 var submit=documnet.getElementById('submit_btn');
 submit.onclick= function(){
    //make a request ot server  and send the name
-   //capture the list of names and render it
-   var names=['name1','name2','name3'];
-   var list='';
-   for(var i=0; i<names.length; i++){
-       list+ '<li>' + names[i] +'</li>';
-   }
-   var ul=documnet.getElementById('namelist');
-   ul.innerHTML=list;
+  
+  
 };
