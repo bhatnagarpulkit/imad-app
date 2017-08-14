@@ -21,3 +21,18 @@ button.onclick=function(){
 request.open('GET','http://skbhatnagar1961.imad.hasura-app.io/counter',true );
 request.send(null);
 };
+//submit name
+var nameInput=documnet.getElementById('name');
+var name=nameInput.value;
+var submit=documnet.getElementById('submit_btn');
+submit.onclick= function(){
+   //make arequest ot server  and send the name
+   //capture the list of names and render it
+   var names=['pulkit','katty','sheku'];
+   var list='';
+   for(var i=0; i<names.length; i++){
+       list+- '<li>' + names[i] +'</li>';
+   }
+   var ul=documnet.getElementById('namelist');
+   ul.innerHTML=list;
+};
