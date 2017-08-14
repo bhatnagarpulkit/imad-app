@@ -6,7 +6,7 @@ button.onclick=function(){
   var request= new XMLHttpRequest();
   //capture the respone and store it in a variable
   request.onreadystatechange=function(){
-    if(request.readyState ===XMLHttpRequest.DONE)
+    if(request.readyState ===XMLHttpRequest.DONE){
     //take some action
     if(request.status==200){
         var counter=request.responseText;
@@ -20,11 +20,4 @@ button.onclick=function(){
 //make the request
 request.open('GET','http://skbhatnagar1961.imad.hasura-app.io/counter',true );
 request.send(null);
-
-  
-  
-  
-  
- 
 };
-
