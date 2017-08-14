@@ -26,7 +26,7 @@ var nameInput=documnet.getElementById('name');
 var name=nameInput.value;
 var submit=documnet.getElementById('submit_btn');
 submit.onclick= function(){
-   //make arequest ot server  and send the name
+   //make a request ot server  and send the name
    //capture the list of names and render it
    var names=['pulkit','katty','sheku'];
    var list='';
