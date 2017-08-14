@@ -70,7 +70,7 @@ app.get('/counter',function(req,res){
   res.send(counter.toString());
   
     
-};
+});
 
 
 app.get('/article-one', function (req, res){
