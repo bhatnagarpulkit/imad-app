@@ -27,11 +27,3 @@ request.open('GET','http://skbhatnagar1961.imad.hasura-app.io/counter',true );
 request.send(null);
 };
 //submit name
-var nameInput=documnet.getElementById('names');
-var name=nameInput.value;
-var submit=documnet.getElementById('submit_btn');
-submit.onclick= function(){
-   //make a request ot server  and send the name
-  
-  
-};
