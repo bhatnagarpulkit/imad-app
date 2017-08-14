@@ -6,7 +6,7 @@ element.innerHTML='New  Value';
 
 
 //move the image
-var image=documnet.getElementById('pulkit')
+var image=document.getElementById('pulkit')
 img.onclick=function() {
     img.style.marginright='100px';
 };
